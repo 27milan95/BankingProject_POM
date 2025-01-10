@@ -20,8 +20,14 @@ public class TransactionPage extends BaseClass{
 	@FindBy(xpath="//button[@ng-click='withdrawl()']")
 	WebElement Withdrawl;
 	
-	@FindBy(xpath="//input[@placeholder='amount']")
-	WebElement EnterAmount;
+	@FindBy(xpath="//button[@ng-click='transactions()']")
+	WebElement Transactions;
+	
+	@FindBy(xpath="//form[@ng-submit='deposit()']/div/input")
+	WebElement EnterDepositAmount;
+	
+	@FindBy(xpath="//form[@ng-submit='withdrawl()']/div/input")
+	WebElement EnterWithdrawlAmount;
 	
 	@FindBy(xpath="//button[@type='submit']")
 	WebElement SubmitButton;
@@ -29,8 +35,26 @@ public class TransactionPage extends BaseClass{
 	@FindBy(xpath="//span[@class=\"error ng-binding\"]")
 	WebElement DepositMessage;
 	
+	@FindBy(xpath="//span[@class='error ng-binding']")
+	WebElement TransactionMessage;
+	
 	@FindBy(xpath="//div[@ng-hide='noAccount']/strong[2]")
 	WebElement Balance;
+	
+	@FindBy(xpath="//tr[@id='anchor0']/td[2]")
+	WebElement transactionAmount;
+	
+	@FindBy(xpath="//tr[@id='anchor0']/td[3]")
+	WebElement transactionType;
+	
+	@FindBy(xpath="//tbody")
+	WebElement table;
+	
+	@FindBy(xpath="//button[@ng-click=\"back()\"]")
+	WebElement BackButton;
+	
+	@FindBy(xpath="//button[@class='btn logout']")
+	WebElement LogoutButton;
 	
 	public TransactionPage() {
 		super();
@@ -39,22 +63,47 @@ public class TransactionPage extends BaseClass{
 	
 	public void depositMoney(String number){
 		Deposit.click();
-		EnterAmount.sendKeys(number);
+		EnterDepositAmount.sendKeys(number);
 		SubmitButton.click();
 	}
 	
-	public void withdrawlMoney() {
+	public void withdrawlMoney(String number) {
 		Withdrawl.click();
-		EnterAmount.sendKeys("100");
+		EnterWithdrawlAmount.sendKeys(number);
 		SubmitButton.click();
 	}
 	
+	public void transactionDetails() {
+		Transactions.click();
+		BackButton.click();
+		Transactions.click();
+	}
+	
+	public void logout() {
+	LogoutButton.click();
+	}
 	public String getDepositMessage() {
 		return DepositMessage.getText();
 	}
 	
+	public String getTransactionMessage() {
+		return TransactionMessage.getText();
+	}
+	
 	public String getBalance() {
 		return Balance.getText();
+	}
+	
+	public String getTransactionAmount() {
+		return transactionAmount.getText();
+	}
+	
+	public String getTransactiontype() {
+		return transactionType.getText();
+	}
+	
+	public WebElement getTableElement() {
+		return table;
 	}
 
 }

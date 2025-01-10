@@ -25,7 +25,7 @@ public class BaseClass {
 		
 		//driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		//driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
 		driver.get(url);
 	}

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.TS01VerifyTransactions">
+      <class name="tests.TS02VerifyCustomerFunctionality">
         <methods>
-          <include name="openbrowser"/>
-          <include name="verifyDepositFunctionality"/>
-          <include name="closeBrowser"/>
+          <include name="verifyAddCustomer"/>
+          <include name="teardown"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- tests.TS01VerifyTransactions -->
+      </class> <!-- tests.TS02VerifyCustomerFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
