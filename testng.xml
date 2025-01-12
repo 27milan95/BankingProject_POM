@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="tests.TS01VerifyTransactions"/>
+      	<class name="tests.TS01VerifyTransactions"/>
+		<class name="tests.TS02VerifyCustomerFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

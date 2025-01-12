@@ -1,5 +1,8 @@
 package pages;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -30,6 +33,15 @@ public class BankManagerCustomerPage extends BaseClass{
 	@FindBy(xpath="//button[text()='Add Customer']")
 	private WebElement SaveCustomerdetailsbutton;
 	
+	@FindBy(xpath="//tr/td[1]")
+	private List<WebElement> customersFirstNameList;
+	
+	@FindBy(xpath="//tr/td[2]")
+	private List<WebElement> customersLastNameList;
+	
+	@FindBy(xpath="//tr/td[3]")
+	private List<WebElement> customersPostalCodeList;
+	
 	
 	public BankManagerCustomerPage() {
 		super();
@@ -38,6 +50,34 @@ public class BankManagerCustomerPage extends BaseClass{
 	
 	public WebElement getAddCustuomer() {
 		return AddCustomerButton;
+	}
+	
+	public WebElement getCustuomersButton() {
+		return CustomersButton;
+	}
+	
+	public List getCustomerFirstNameList() {
+		ArrayList list = new ArrayList<>();
+		for(WebElement w : customersFirstNameList) {
+			list.add(w.getText());
+		}
+		return list;
+	}
+	
+	public List getCustomerLastNameList() {
+		ArrayList list = new ArrayList<>();
+		for(WebElement w : customersLastNameList) {
+			list.add(w.getText());
+		}
+		return list;
+	}
+	
+	public List getCustomerPostalCodeList() {
+		ArrayList list = new ArrayList<>();
+		for(WebElement w : customersPostalCodeList) {
+			list.add(w.getText());
+		}
+		return list;
 	}
 	
 	public WebElement SaveCustuomerdetails() {

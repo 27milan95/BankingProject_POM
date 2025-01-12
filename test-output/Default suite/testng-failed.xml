@@ -5,9 +5,9 @@
     <classes>
       <class name="tests.TS02VerifyCustomerFunctionality">
         <methods>
-          <include name="verifyAddCustomer"/>
           <include name="teardown"/>
           <include name="setup"/>
+          <include name="verifycustomerDisplayedInCustomersPage"/>
         </methods>
       </class> <!-- tests.TS02VerifyCustomerFunctionality -->
     </classes>

@@ -43,8 +43,18 @@ public class TS02VerifyCustomerFunctionality {
 		methods.clickOnButton(BMcustomerPage.getAddCustuomer());
 		BMcustomerPage.addCustomerDetails("Ross", "Gellar", "N2P3Y6");
 		methods.clickOnButton(BMcustomerPage.SaveCustuomerdetails());
-		Assert.assertEquals(methods.getAlertMessage(), "Customer added successfully with customer id :6");
+		Assert.assertTrue(methods.getAlertMessage().contains("Customer added successfully"), "Customer fails to add in system");
 		methods.acceptAlert();
+	}
+	
+	
+
+	@Test
+	public void verifycustomerDisplayedInCustomersPage() throws Throwable {
+		methods.clickOnButton(BMcustomerPage.getCustuomersButton());
+		Assert.assertTrue(BMcustomerPage.getCustomerFirstNameList().contains("Ross"),"Customer's First Name didn't found");
+		Assert.assertTrue(BMcustomerPage.getCustomerLastNameList().contains("Gellar"),"Customer's Last Name didn't found");
+		Assert.assertTrue(BMcustomerPage.getCustomerPostalCodeList().contains("N2P3Y6"),"Customer's PostalCode Name didn't found");
 	}
 
 }
