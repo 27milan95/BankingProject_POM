@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-11T23:22:07 EST" name="Suite" finished-at="2025-01-11T23:22:18 EST" duration-ms="10789">
+  <suite started-at="2025-01-14T21:54:38 EST" name="Suite" finished-at="2025-01-14T21:54:50 EST" duration-ms="12672">
     <groups>
     </groups>
-    <test started-at="2025-01-11T23:22:07 EST" name="Test" finished-at="2025-01-11T23:22:18 EST" duration-ms="10789">
+    <test started-at="2025-01-14T21:54:38 EST" name="Test" finished-at="2025-01-14T21:54:50 EST" duration-ms="12672">
       <class name="tests.TS01VerifyTransactions">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-11T23:22:07 EST" name="setup" finished-at="2025-01-11T23:22:11 EST" duration-ms="3811" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-14T21:54:38 EST" name="setup" finished-at="2025-01-14T21:54:43 EST" duration-ms="5725" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyDepositFunctionality()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-11T23:22:11 EST" name="verifyDepositFunctionality" finished-at="2025-01-11T23:22:13 EST" duration-ms="2061" status="PASS">
+        <test-method signature="verifyDepositFunctionality()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-14T21:54:43 EST" name="verifyDepositFunctionality" finished-at="2025-01-14T21:54:45 EST" duration-ms="1550" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyDepositFunctionality -->
-        <test-method signature="verifyWithDrawlFunctionality()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-11T23:22:13 EST" name="verifyWithDrawlFunctionality" finished-at="2025-01-11T23:22:14 EST" duration-ms="647" status="PASS">
+        <test-method signature="verifyWithDrawlFunctionality()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-14T21:54:45 EST" name="verifyWithDrawlFunctionality" finished-at="2025-01-14T21:54:46 EST" duration-ms="658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyWithDrawlFunctionality -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-11T23:22:14 EST" name="teardown" finished-at="2025-01-11T23:22:14 EST" duration-ms="166" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.TS01VerifyTransactions@3cc1435c]" started-at="2025-01-14T21:54:46 EST" name="teardown" finished-at="2025-01-14T21:54:46 EST" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- tests.TS01VerifyTransactions -->
       <class name="tests.TS02VerifyCustomerFunctionality">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-11T23:22:14 EST" name="setup" finished-at="2025-01-11T23:22:16 EST" duration-ms="2069" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-14T21:54:46 EST" name="setup" finished-at="2025-01-14T21:54:48 EST" duration-ms="2470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyAddCustomer()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-11T23:22:16 EST" name="verifyAddCustomer" finished-at="2025-01-11T23:22:17 EST" duration-ms="1181" status="PASS">
+        <test-method signature="verifyAddCustomer()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-14T21:54:48 EST" name="verifyAddCustomer" finished-at="2025-01-14T21:54:50 EST" duration-ms="1213" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAddCustomer -->
-        <test-method signature="verifycustomerDisplayedInCustomersPage()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-11T23:22:17 EST" name="verifycustomerDisplayedInCustomersPage" finished-at="2025-01-11T23:22:18 EST" duration-ms="622" status="PASS">
+        <test-method signature="verifycustomerDisplayedInCustomersPage()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-14T21:54:50 EST" name="verifycustomerDisplayedInCustomersPage" finished-at="2025-01-14T21:54:50 EST" duration-ms="613" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifycustomerDisplayedInCustomersPage -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-11T23:22:18 EST" name="teardown" finished-at="2025-01-11T23:22:18 EST" duration-ms="189" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.TS02VerifyCustomerFunctionality@6bf0219d]" started-at="2025-01-14T21:54:50 EST" name="teardown" finished-at="2025-01-14T21:54:50 EST" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

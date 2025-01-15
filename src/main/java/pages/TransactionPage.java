@@ -15,46 +15,46 @@ import testUtilities.BaseClass;
 public class TransactionPage extends BaseClass{
 	
 	@FindBy(xpath="//button[@ng-click='deposit()']")
-	WebElement Deposit;
+	private WebElement Deposit;
 	
 	@FindBy(xpath="//button[@ng-click='withdrawl()']")
-	WebElement Withdrawl;
+	private WebElement Withdrawl;
 	
 	@FindBy(xpath="//button[@ng-click='transactions()']")
-	WebElement Transactions;
+	private WebElement Transactions;
 	
 	@FindBy(xpath="//form[@ng-submit='deposit()']/div/input")
-	WebElement EnterDepositAmount;
+	private WebElement EnterDepositAmount;
 	
 	@FindBy(xpath="//form[@ng-submit='withdrawl()']/div/input")
-	WebElement EnterWithdrawlAmount;
+	private WebElement EnterWithdrawlAmount;
 	
 	@FindBy(xpath="//button[@type='submit']")
-	WebElement SubmitButton;
+	private WebElement SubmitButton;
 	
 	@FindBy(xpath="//span[@class=\"error ng-binding\"]")
-	WebElement DepositMessage;
+	private WebElement DepositMessage;
 	
 	@FindBy(xpath="//span[@class='error ng-binding']")
-	WebElement TransactionMessage;
+	private WebElement TransactionMessage;
 	
 	@FindBy(xpath="//div[@ng-hide='noAccount']/strong[2]")
-	WebElement Balance;
+	private WebElement Balance;
 	
 	@FindBy(xpath="//tr[@id='anchor0']/td[2]")
-	WebElement transactionAmount;
+	private WebElement transactionAmount;
 	
 	@FindBy(xpath="//tr[@id='anchor0']/td[3]")
-	WebElement transactionType;
+	private WebElement transactionType;
 	
 	@FindBy(xpath="//tbody")
-	WebElement table;
+	private WebElement table;
 	
 	@FindBy(xpath="//button[@ng-click=\"back()\"]")
-	WebElement BackButton;
+	private WebElement BackButton;
 	
 	@FindBy(xpath="//button[@class='btn logout']")
-	WebElement LogoutButton;
+	private WebElement LogoutButton;
 	
 	public TransactionPage() {
 		super();

@@ -16,8 +16,6 @@ public class TS02VerifyCustomerFunctionality {
 	
 	BaseClass base;
 	UserIdentifierPage userIdentifierPage;
-	CustomerLoginPage customerPage;
-	TransactionPage transactionPage;
 	CommonMethods methods;
 	BankManagerCustomerPage BMcustomerPage;
 	
@@ -26,8 +24,6 @@ public class TS02VerifyCustomerFunctionality {
 		base = new BaseClass();
 		base.openbrowser("Chrome", "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login");
 		userIdentifierPage = new UserIdentifierPage();
-		customerPage = new CustomerLoginPage();
-		transactionPage = new TransactionPage();
 		methods = new CommonMethods();
 		BMcustomerPage = new BankManagerCustomerPage();
 	}
